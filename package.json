@@ -1,0 +1,38 @@
+{
+  "name": "gulp-file-to-json",
+  "version": "1.0.0",
+  "description": "Output file contents and it's md5 hash value in JSON format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "gulp": "gulp"
+  },
+  "pre-commit": [
+    "gulp jscs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vast-engineering/gulp-file-to-json"
+  },
+  "keywords": [
+    "gulp",
+    "gulpplugin",
+    "css",
+    "styles",
+    "stylesheet",
+    "fonts",
+    "json",
+    "localstorage"
+  ],
+  "author": "Vast",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jscs": "^3.0.2",
+    "gulp-rename": "^1.2.2"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.1"
+  }
+}
