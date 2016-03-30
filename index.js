@@ -17,9 +17,8 @@ function calcMd5 (data) {
 module.exports = function () {
     // Creating a stream through which each file will pass
     return through.obj(function (file, enc, cb) {
-        var prefix = new Buffer('{"md5":"' + calcMd5(file.contents) + '","value":');
-        var contents = new Buffer(JSON.stringify(file.contents.toString()));
-        var sufix = new Buffer('}');
+        var fileContents = JSON.stringify(file.contents.toString());
+        var output = '{"md5":"' + calcMd5(file.contents) + '","value":' + fileContents + '}';
 
         if (file.isNull()) {
             // return empty file
@@ -27,12 +26,12 @@ module.exports = function () {
         }
 
         if (file.isStream()) {
-            this.emit('error', new gutil.PluginError(PLUGIN_NAME, 'Stream not supported')); // TODO?
+            this.emit('error', new gutil.PluginError(PLUGIN_NAME, 'Stream not supported'));
             return cb(null, file);
         }
 
         if (file.isBuffer()) {
-            file.contents = Buffer.concat([prefix, contents, sufix]);
+            file.contents = new Buffer(output);
         }
 
         cb(null, file);
