@@ -14,7 +14,7 @@ function calcMd5 (data) {
 }
 
 // Plugin level function (dealing with files)
-module.exports = function (options) {
+module.exports = function () {
     // Creating a stream through which each file will pass
     return through.obj(function (file, enc, cb) {
         var prefix = new Buffer('{"md5":"' + calcMd5(file.contents) + '","value":');
