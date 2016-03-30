@@ -1,7 +1,7 @@
 {
   "name": "gulp-file-to-json",
   "version": "1.0.1",
-  "description": "Outputs file contents and MD5 hash value in JSON format with Gulp.",
+  "description": "Gulp plugin to convert a file and its MD5 hash value into a JSON representation.",
   "main": "index.js",
   "scripts": {
     "test": "mocha -R spec ./test/*.js",
@@ -23,7 +23,8 @@
     "css",
     "fonts",
     "json",
-    "localstorage"
+    "localstorage",
+    "md5"
   ],
   "author": "Vast",
   "license": "MIT",
