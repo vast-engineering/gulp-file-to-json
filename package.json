@@ -1,6 +1,6 @@
 {
   "name": "gulp-file-to-json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Outputs file contents and MD5 hash value in JSON format with Gulp.",
   "main": "index.js",
   "scripts": {
