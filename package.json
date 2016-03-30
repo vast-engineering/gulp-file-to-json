@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha -R spec ./test/*.js",
-    "gulp": "gulp"
+    "jscs": "gulp jscs"
   },
   "pre-commit": [
-    "gulp jscs"
+    "jscs",
+    "test"
   ],
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "gulp-jscs": "^3.0.2",
     "gulp-rename": "^1.2.2",
     "mocha": "^2.4.5",
+    "pre-commit": "^1.1.2",
     "vinyl": "^1.1.1"
   },
   "dependencies": {

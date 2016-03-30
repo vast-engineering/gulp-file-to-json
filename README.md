@@ -51,10 +51,6 @@ Advanced usage with [gulp-rename](https://www.npmjs.com/package/gulp-rename):
       fs.writeFileSync('./demo/demo.css.md5', json.md5);
     });
 
-## TODO
-
-* Add pre-commit hook for jscs.
-
 ## Credits
 
 Inspired by [font-store](https://github.com/CrocoDillon/font-store) (base64 encodes web fonts to cache in LocalStorage for high performance).
