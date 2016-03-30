@@ -8,13 +8,13 @@ Gulp plugin to convert a file and its MD5 hash value into a JSON representation.
 
 ## Example
 
-Transform demo.css:
+Transform example.css:
 
 ```css
 body {color: olive;}
 ```
 
-Into demo.json:
+Into example.json:
 
 ```json
 {
@@ -30,7 +30,7 @@ var gulp = require('gulp');
 var file2json = require('gulp-file-to-json');
 
 gulp.task('file-to-json', function () {
-  return gulp.src('demo/demo.css')
+  return gulp.src('example/example.css')
     .pipe(file2json())
     .pipe(gulp.dest('./'));
 });
