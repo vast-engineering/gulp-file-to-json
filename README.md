@@ -1,20 +1,24 @@
-# gulp-file-to-json [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url]
+# gulp-file-to-json
 
-Gulp plugin to convert a file and its MD5 hash value into a JSON representation.
+> Gulp plugin to convert a file and its MD5 hash value into a JSON representation.
+
+[![NPM version](https://badge.fury.io/js/gulp-file-to-json.svg)](https://www.npmjs.com/package/gulp-file-to-json) [![Dependency Status](https://david-dm.org/vast-engineering/gulp-file-to-json.svg)](https://david-dm.org/vast-engineering/gulp-file-to-json) [![devDependency Status](https://david-dm.org/vast-engineering/gulp-file-to-json/dev-status.svg)](https://david-dm.org/vast-engineering/gulp-file-to-json#info=devDependencies)
 
 ## Install
 
-    npm install --save-dev gulp-file-to-json
+```bash
+npm install --save-dev gulp-file-to-json
+```
 
 ## Example
 
-Transform example.css:
+Transform `example.css`:
 
 ```css
 body {color: olive;}
 ```
 
-Into example.json:
+Into `example.json`:
 
 ```json
 {
@@ -23,16 +27,16 @@ Into example.json:
 }
 ```
 
-Using gulpfile.js:
+Using `gulpfile.js`:
 
 ```javascript
 var gulp = require('gulp');
 var file2json = require('gulp-file-to-json');
 
-gulp.task('file-to-json', function () {
+gulp.task('json-file', function () {
   return gulp.src('example/example.css')
     .pipe(file2json())
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('example'));
 });
 ```
 
@@ -40,11 +44,14 @@ gulp.task('file-to-json', function () {
 
 Inspired by [font-store](https://github.com/CrocoDillon/font-store) (Base64 encodes web fonts to cache in LocalStorage for high performance).
 
-[npm-url]: https://www.npmjs.com/package/gulp-file-to-json
-[npm-image]: https://badge.fury.io/js/gulp-file-to-json.svg
-[travis-url]: https://travis-ci.org/TODO/gulp-file-to-json
-[travis-image]: https://img.shields.io/travis/TODO/gulp-file-to-json.svg?branch=master
-[coveralls-url]: https://coveralls.io/r/TODO/gulp-file-to-json
-[coveralls-image]: https://img.shields.io/coveralls/TODO/gulp-file-to-json.svg
-[depstat-url]: https://david-dm.org/TODO/gulp-file-to-json
-[depstat-image]: https://david-dm.org/TODO/gulp-file-to-json.svg
+## License
+
+[MIT](https://github.com/vast-engineering/gulp-file-to-json/blob/master/LICENSE) © 2016 [Vast](http://www.vast.com/)
+
+<!--
+TODO:
+
+[![Build Status](https://img.shields.io/travis/TODO/gulp-file-to-json.svg?branch=master)](https://travis-ci.org/TODO/gulp-file-to-json)
+
+[![Coveralls Status](https://img.shields.io/coveralls/TODO/gulp-file-to-json.svg)](https://coveralls.io/r/TODO/gulp-file-to-json)
+-->

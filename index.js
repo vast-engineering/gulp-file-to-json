@@ -1,6 +1,6 @@
-var crypto = require('crypto'); // native node cryptographic functionality module (md5, sha1)
+var crypto = require('crypto'); // cryptographic functionality (md5)
 var through = require('through2'); // a thin wrapper around node transform streams
-var gutil = require('gulp-util'); // gulp utilities
+var gutil = require('gulp-util'); // utilities for gulp plugins
 
 const PLUGIN_NAME = 'gulp-file-to-json';
 

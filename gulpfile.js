@@ -1,17 +1,13 @@
 // Load dependencies
-var fs = require('fs');
 var gulp = require('gulp');
-var rename = require('gulp-rename');
 var file2json = require('index.js');
+var fs = require('fs');
 
 // Generate example.json (from contents of example.css and it's md5 hash)
 gulp.task('json-file', function () {
-    return gulp.src('example/example.css')
-        .pipe(file2json())
-        .pipe(rename(function (path) {
-            path.extname = '.json';
-        }))
-        .pipe(gulp.dest('example'));
+  return gulp.src('example/example.css')
+    .pipe(file2json())
+    .pipe(gulp.dest('example'));
 });
 
 // Generate example.css.md5 (from "md5" value in example.json)
