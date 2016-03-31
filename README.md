@@ -10,7 +10,7 @@
 npm install --save-dev gulp-file-to-json
 ```
 
-## Example
+## Usage
 
 Transform `example.css`:
 
@@ -46,7 +46,7 @@ Inspired by [font-store](https://github.com/CrocoDillon/font-store) (Base64 enco
 
 ## License
 
-[MIT](https://github.com/vast-engineering/gulp-file-to-json/blob/master/LICENSE) © 2016 [Vast](http://www.vast.com/)
+[MIT](https://github.com/vast-engineering/gulp-file-to-json/blob/master/LICENSE) © 2016 Vast.com, Inc.
 
 <!--
 TODO:
