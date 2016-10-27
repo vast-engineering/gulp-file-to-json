@@ -1,6 +1,6 @@
 {
   "name": "gulp-file-to-json",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Gulp plugin to convert a file and its MD5 hash value into a JSON representation.",
   "main": "index.js",
   "scripts": {
