@@ -2,7 +2,7 @@
 
 > Gulp plugin to convert a file and its MD5 hash value into a JSON representation.
 
-[![NPM version](https://badge.fury.io/js/gulp-file-to-json.svg)](https://www.npmjs.com/package/gulp-file-to-json) [![Dependency Status](https://david-dm.org/vast-engineering/gulp-file-to-json.svg)](https://david-dm.org/vast-engineering/gulp-file-to-json) [![devDependency Status](https://david-dm.org/vast-engineering/gulp-file-to-json/dev-status.svg)](https://david-dm.org/vast-engineering/gulp-file-to-json#info=devDependencies)
+[![NPM version](https://badge.fury.io/js/gulp-file-to-json.svg)](https://www.npmjs.org/package/gulp-file-to-json) [![Dependency Status](https://david-dm.org/vast-engineering/gulp-file-to-json.svg)](https://david-dm.org/vast-engineering/gulp-file-to-json) [![devDependency Status](https://david-dm.org/vast-engineering/gulp-file-to-json/dev-status.svg)](https://david-dm.org/vast-engineering/gulp-file-to-json?type=dev)
 
 ## Install
 
